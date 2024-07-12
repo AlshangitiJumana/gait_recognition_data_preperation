@@ -43,7 +43,7 @@ Ensure your input data is structured as follows:
     │   ├── video4.mp4
     └── ...
 
-Running the Code
+# Running the Code
 
 Update the input_dir and output_dir variables in the script to match your directory paths. 
 
