@@ -21,6 +21,7 @@ numpy
 Installation
 
 Clone the repository:
+besh
 git clone https://github.com/AlshangitiJumana/gait_recognition.git
 
 cd gait_recognition
