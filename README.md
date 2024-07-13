@@ -150,3 +150,7 @@ I used the Gaitset code and paper as a reference in this project
   year={2021},
   pages={1-1},
   doi={10.1109/TPAMI.2021.3057879}}
+
+  and for the Silhouette extraction code I used this code as reference 
+  
+  https://github.com/jordankzf/human-silhouette-extractor.git
