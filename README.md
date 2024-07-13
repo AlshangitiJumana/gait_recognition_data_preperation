@@ -141,3 +141,12 @@ similar to what was done with Dataset-B in the GaitSet repository.
 ### Notes
 I recommend using a Kaggle notebook to run the code, as it provides free GPU access for up to 30 hours a week, which will significantly speed up the processing compared to running it on a CPU.
 
+## Acknowledgment 
+I used the Gaitset code and paper as a reference in this project
+@ARTICLE{chao2019gaitset,
+  author={Chao, Hanqing and Wang, Kun and He, Yiwei and Zhang, Junping and Feng, Jianfeng},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={GaitSet: Cross-view Gait Recognition through Utilizing Gait as a Deep Set}, 
+  year={2021},
+  pages={1-1},
+  doi={10.1109/TPAMI.2021.3057879}}
