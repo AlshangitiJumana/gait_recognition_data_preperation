@@ -42,7 +42,8 @@ Ensure your input data is structured as follows:
     │   ├── video3.mp4
     │   ├── video4.mp4
     └── ...
-
+The data in the `Original_data` directory consists of videos recorded with my phone, featuring four different people walking towards and away from the camera.
+It is recommended to take six videos for each person.
 # Running the Code
 
 Update the input_dir and output_dir variables in the script to match your directory paths. 
@@ -59,7 +60,9 @@ Processed videos will be saved in the specified output directory, with filenames
 ## Gait Recognition Silhouette Extraction
 
 ### Overview
-This project focuses on using gait recognition to identify people by extracting human silhouettes from video files. The extraction of silhouettes is the first step in developing a gait recognition system. The extracted silhouettes will be used as input for subsequent modeling processes. After extracting the silhouettes, the next steps will involve training a gait recognition model using the segmented silhouettes as input data.
+This project focuses on using gait recognition to Identify people the extraction of human silhouettes from video files, which serves as the first step in developing a gait recognition system. The extracted silhouettes will be used as input for subsequent modeling processes.
+
+After extracting the silhouettes, the next steps will involve training a gait recognition model using the segmented silhouettes as input data.
 
 ### Features of the Human Silhouette Extractor
 - Processes multiple videos from nested directories.
@@ -93,13 +96,13 @@ Ensure your input data is structured as follows:
 
 /path/to/Original_data/
 
-├── 001/
-│ ├── video1.mp4
-│ ├── video2.mp4
-├── 002/
-│ ├── video3.mp4
-│ ├── video4.mp4
-└── ...
+    ├── 001/
+    │   ├── video1.mp4
+    │   ├── video2.mp4
+    ├── 002/
+    │   ├── video3.mp4
+    │   ├── video4.mp4
+    └── ...
 
 
 #### Running the Code
@@ -111,9 +114,11 @@ Ensure your input data is structured as follows:
 Processed videos will be saved in the specified output directory, with filenames prefixed by `output-{file-name}`.
 
 ### Next Steps
-After silhouette extraction, the next step is to turn the video into frames of size 64x64, similar to what was done with Dataset-B in the GaitSet repository.
+After silhouette extraction, the next step is to turn the video into frames of size 64x64,
+similar to what was done with Dataset-B in the GaitSet repository.
 
-#### Using GaitSet Preparation Code
+#### Using GaitSet Preparation Code for CASIA-B Dataset
+
 1. Follow the instructions in the GaitSet repository to prepare the dataset:
     ```sh
     git clone https://github.com/AbnerHqC/GaitSet.git
@@ -125,7 +130,7 @@ After silhouette extraction, the next step is to turn the video into frames of s
     python prepare_dataset.py --input_dir /path/to/output-silhouettes --output_dir /path/to/frames --frame_size 64
     ```
 
-#### Running the Code
+#### for you videos run the Code silhouette-cut-code.ipynb
 1. Load the Jupyter notebook provided in the repository:
     ```sh
     jupyter notebook silhouette-cut-code.ipynb
