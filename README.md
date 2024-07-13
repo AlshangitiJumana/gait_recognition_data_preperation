@@ -21,11 +21,10 @@ numpy
 Installation
 
 Clone the repository:
-besh
+'''sh
 git clone https://github.com/AlshangitiJumana/gait_recognition.git
-
 cd gait_recognition
-
+'''
 Install the required packages:
 
 pip install torch torchvision opencv-python numpy
